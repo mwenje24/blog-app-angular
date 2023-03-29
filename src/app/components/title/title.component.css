@@ -1,0 +1,8 @@
+.title-head{
+    width: 100%;
+    margin: 5px auto;
+}
+.title-head h3{
+    color: brown;
+    font-size: 1.2em;
+}

@@ -1,0 +1,19 @@
+<div class="overlay">
+    <div class="popup">
+      <div class="message">{{ message }}</div>
+      <div class="buttons" mat-dialog-actions>
+        <app-button
+            color="rgb(1,1,20)"
+            text="Ok" 
+            mat-dialog-close
+            (click)="onConfirm()"
+        ></app-button>
+        <app-button
+            color="grey"
+            text="Cancel" 
+            mat-dialog-close
+            (click)="onCancel()"
+        ></app-button>
+      </div>
+    </div>
+</div>

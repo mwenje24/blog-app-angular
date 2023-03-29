@@ -1,0 +1,34 @@
+<div class="post-card">
+    <mat-card class="post-card">
+        <!-- <div class="card-image"></div> -->
+        <div class="card">
+            <mat-card-title class="title-head">{{ post.title }}
+                <fa-icon 
+                [ngStyle]="{'color': 'brown'}"
+                [icon]="faTimes"
+                (click)="toggleConfirmDelete(post)"></fa-icon></mat-card-title>
+            <mat-card-content style="font-style: italic;">Author: {{ post.author }}</mat-card-content>
+            <mat-card-content id="read-more" *ngIf="showMore">
+                {{ post.description }} <br>
+                <app-button
+                color="teal"
+                (click)="toggleEditPost(post)"
+                text="edit"
+            ></app-button>
+            </mat-card-content> 
+            <button 
+                mat-button
+                (click)="onReadMore()"
+                style="color: brown; font-size: smaller;">Read {{ showMore ? 'less' : 'more'}}</button> 
+        </div>
+    </mat-card>                          
+</div>
+<app-confirm-dialog 
+    [message]="'Are you sure you want to delete this post?'" 
+    (confirmed)="onDelete(post)" 
+    (cancelled)="cancelDelete()"
+    *ngIf="showConfirmDelete">
+</app-confirm-dialog>
+<app-edit-post
+    *ngIf="showEditPost"
+></app-edit-post>

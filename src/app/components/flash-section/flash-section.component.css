@@ -1,0 +1,14 @@
+.flash-card{
+    width: 100%;
+    margin:20px auto;
+    text-align: center;
+}
+
+.flash-card .cards{
+    width: 30%;
+    min-height: 25vh;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}

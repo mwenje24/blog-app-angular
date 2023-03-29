@@ -1,0 +1,5 @@
+<app-posts 
+*ngFor="let post of posts"
+(onDeletePost) = "deletePost(post)"
+[post] ="post">
+</app-posts>

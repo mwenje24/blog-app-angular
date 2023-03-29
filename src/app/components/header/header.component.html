@@ -1,0 +1,17 @@
+<header>
+    <ul>
+        <li><a routerLink="/all">All Posts</a></li>
+        <li [matMenuTriggerFor]="categoriesMenu">Categories</li>
+            <mat-menu 
+                #categoriesMenu="matMenu"
+                yPosition="below">
+                <ng-container>
+                    <ul *ngFor="let categories of postCategories">
+                        <li><a mat-menu-item [routerLink]="['/category']" [queryParams]="{ category: categories.category }">{{ categories.category }}</a></li>
+                    </ul>
+                </ng-container>
+          </mat-menu>
+        <li><a routerLink="/add-post">Add Post</a></li>
+    </ul>
+</header>
+

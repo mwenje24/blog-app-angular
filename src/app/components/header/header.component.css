@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+}
+
+ul{
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li{
+    padding: 5px 15px;
+    display: inline-block;
+    list-style: none;
+}
+
+ul li a:hover{
+    color: brown;
+}
+
+ul li, ul li a{
+    text-decoration: none;
+    color: rgb(0, 121, 121);
+}
+.menu-dropdown li a{
+    margin: 0.5em 0;
+    padding: 0.25em 0;
+}

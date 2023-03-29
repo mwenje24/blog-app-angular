@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Evolution Theory",
+      "author": "Charles Darwain",
+      "category": "educational",
+      "description": "i lied. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo"
+    },
+    {
+      "id": 2,
+      "title": "The Force of Gravity",
+      "author": "Newton",
+      "category": "educational",
+      "description": "i have no idea what i was talking about, Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+    },
+    {
+      "title": "Mandamano",
+      "author": "Baba",
+      "category": "politics",
+      "description": "The mother of all mandamanos, At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
+      "id": 3
+    },
+    {
+      "title": "eregr",
+      "author": "effewf",
+      "category": "educational",
+      "description": "wefewfefwef",
+      "id": 4
+    }
+  ]
+}

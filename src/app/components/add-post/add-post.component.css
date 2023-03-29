@@ -1,0 +1,29 @@
+.custom-input{
+  border-color: rgb(2, 134, 134);
+  background-color: #ffffff;
+}
+.input-container{
+    max-width: 500px;
+    margin: 25px auto;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .input{
+    width: 100%;
+    /* font-size: 16px; */
+  }
+.form{
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.submit-btn{
+  color:#ffffff;
+  background-color: brown;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 14px;
+}

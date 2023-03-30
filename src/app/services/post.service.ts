@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Post } from '../PostInterface'
+import { Post, Category } from '../PostInterface'
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -15,11 +15,16 @@ const httpOptions= {
 export class PostService {
 
   private apiUrl = "http://localhost:5000/posts"
+  private categoryUrl = "http://localhost:5000/categories"
 
   constructor(private http:HttpClient) { }
 
   getPost(): Observable<Post[]>{
     return this.http.get<Post[]>(this.apiUrl)
+  }
+
+  getCategories(): Observable<Category[]>{
+    return this.http.get<Category[]>(this.categoryUrl)
   }
 
   getPostsByCategory(category: string): Observable<Post[]> {

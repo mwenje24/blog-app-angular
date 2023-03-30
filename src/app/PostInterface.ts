@@ -5,3 +5,8 @@ export interface Post {
     category: string;
     description: string;
 }
+
+export interface Category {
+    id?: number;
+    name: string;
+}

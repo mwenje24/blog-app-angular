@@ -28,5 +28,27 @@
       "description": "wefewfefwef",
       "id": 4
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "other"
+    },
+    {
+      "id": 2,
+      "name": "politics"
+    },
+    {
+      "id": 3,
+      "name": "entertainment"
+    },
+    {
+      "id": 4,
+      "name": "technology"
+    },
+    {
+      "id": 5,
+      "name": "educational"
+    }
   ]
 }

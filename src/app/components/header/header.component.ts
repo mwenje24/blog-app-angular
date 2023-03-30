@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../services/post.service';
-import { Post } from '../../PostInterface';
+import { Post, Category } from '../../PostInterface';
 // import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,13 +10,13 @@ import { Post } from '../../PostInterface';
 })
 export class HeaderComponent implements OnInit{
 
-  postCategories: Post[] = [];
+  postCategories: Category[] = [];
   categoriesMenu: any;
 
   constructor(private postService:PostService) {}
 
   ngOnInit() {
-    this.postService.getPost().subscribe((category) => this.postCategories = category);
+    this.postService.getCategories().subscribe((category) => this.postCategories = category);
   }
 
 }

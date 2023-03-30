@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Input } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
 import { Post } from 'src/app/PostInterface';
 import { PostService } from 'src/app/services/post.service';
@@ -9,6 +10,7 @@ import { PostService } from 'src/app/services/post.service';
   styleUrls: ['./edit-post.component.css']
 })
 export class EditPostComponent {
+  post!:Post;
   posts: Post[] = []
 
 
@@ -18,10 +20,12 @@ export class EditPostComponent {
   description!:string;
   subscription!: Subscription;
 
-  constructor(private postService: PostService){ }
+  constructor(private postService: PostService, @Inject(MAT_DIALOG_DATA) private data:  any){ }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.post = this.data.post;
+  }
+  
   onEditPost(){
     if(!this.title || !this.author || !this.category || !this.description){
       alert('please fill in the required fields')

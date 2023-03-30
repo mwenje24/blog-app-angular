@@ -62,7 +62,8 @@ export class PostsComponent implements OnInit{
   toggleEditPost(post: Post){
     const dialogRef = this.dialog.open(EditPostComponent, {
       data: {
-        message: 'Edit Post'
+        message: 'Edit Post',
+        post: post
       }
     });
   
